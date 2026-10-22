@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>My Hobbies - Terminal View</title>
+</head>
+<body class="hobby-page">
+
+<header class="header"> 
+    <h1>My Hobbies</h1>
+    <a href="01-index.html" class="header-home-btn">← Home</a>
+</header>
+
+<main class="hobby-container">
+
+    <!-- HORIZONTAL DIAGONAL SLICED IMAGE STRIP -->
+    <div class="diagonal-row">
+        
+        <div class="diagonal-slice" data-hobby="Coding: I code stuff that I think is possible just to figure out that they already exist.">
+            <span class="slice-label">Coding</span>
+            <img src="img/hobbies/coding.jpeg" alt="Coding">
+        </div>
+
+        <div class="diagonal-slice" data-hobby="Gaming & Strategy: I like to play Moba and bunch of offline strategy games.">
+            <span class="slice-label">Gaming</span>
+            <img src="img/hobbies/gaming.jpeg" alt="Gaming">
+        </div>
+
+        <div class="diagonal-slice" data-hobby="Music: I like to listen to music while I day dream.">
+            <span class="slice-label">Music</span>
+            <img src="img/hobbies/music0.jpeg" alt="Music">
+        </div>
+
+        <div class="diagonal-slice" data-hobby="Anime: I like watching anime as its the result of human imagination.">
+            <span class="slice-label">Anime</span>
+            <img src="img/hobbies/anime.jpeg" alt="Photography">
+        </div>
+
+    </div>
+
+    <!-- TERMINAL BOX FOR TYPING DESCRIPTION BELOW/BESIDE -->
+    <div class="terminal-box">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">hobby_logs.sh</span>
+        </div>
+        <div class="terminal-body">
+            <p class="terminal-prompt">&gt; Hover over any diagonal slice above to inspect data...</p>
+            <p id="terminal-text" class="terminal-output"></p>
+        </div>
+    </div>
+
+</main>
+
+<script>
+    const slices = document.querySelectorAll('.diagonal-slice');
+    const terminalText = document.getElementById('terminal-text');
+
+    slices.forEach(slice => {
+        slice.addEventListener('mouseenter', () => {
+            terminalText.textContent = slice.getAttribute('data-hobby');
+        });
+        slice.addEventListener('mouseleave', () => {
+            terminalText.textContent = "";
+        });
+    });
+</script>
+
+</body>
+</html>
