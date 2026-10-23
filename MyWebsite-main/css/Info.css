@@ -1,0 +1,68 @@
+/* --- HOME PAGE COMMAND HUB THEME --- */
+body.info-page {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+}
+
+body.info-page .header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-bottom: 2px solid #334155;
+    text-align: center;
+}
+
+body.info-page .header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.routine-list {
+    border: 5px solid black;
+    padding: 10px 40px;
+    margin: 20px 20px;
+    font-weight: 2rem;
+}
+
+.destination-list {
+    border: 5px solid black;
+    padding: 10px 40px;
+    margin: 20px 20px;
+    font-weight: 2rem;
+}
+
+.definitions-list {
+    border: 5px solid black;
+    padding: 10px 40px;
+    margin: 20px 20px;
+    font-weight: 2rem;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 16px;
+    border: 1px solid blue;
+    text-align: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #4682B4;
+    max-width: 600px;
+    width: 90%;
+    padding: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #ffffff;
+}
+

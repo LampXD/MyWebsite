@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Portfolio</title>
+</head>
+
+<body class="home-page"> 
+
+<header class="header"> 
+    <h1>Welcome to My Portfolio</h1>
+</header>
+
+<!-- ================= PROFILE SECTION ================= -->
+<div class="profile-section-layout">
+    
+    <!-- LEFT: Larger Vertical Cyber Banner -->
+    <div class="vertical-banner">
+        <img src="img/v-banner.jpeg " alt="Vertical Banner">
+        <div class="banner-overlay-text">
+        </div>
+    </div>
+
+    <!-- 2. CENTER: Main Profile Box with Attached LEDs -->
+    <div class="profile-center-panel">
+        <div class="profile-banner">
+            <img src="img/banner.jpeg" alt="Banner Background">
+        </div>
+
+        <div class="profile-content">
+            
+            <!-- Left Side of Card: Avatar + Name Info -->
+            <div class="profile-avatar-container">
+                <img src="img/Jem.jpeg" alt="Profile Picture" class="profile-avatar">
+                <div class="profile-info">
+                    <h2>Jemuel V. Pagdanganan</h2>
+                    <p class="profile-tagline">BSIT Student // Amatuer Programmer // Tech Enthusiast</p>
+                </div>
+            </div>
+
+            <!-- Right Side of Card: Bugging Terminal (Beside Info) -->
+            <div class="crazy-terminal">
+                <div class="terminal-bar">
+                    <span class="term-dot red"></span>
+                    <span class="term-dot yellow"></span>
+                    <span class="term-dot green"></span>
+                    <span class="term-title">system_override.sh</span>
+                </div>
+                <div class="terminal-screen">
+                    <p class="glitch-line line1">&gt; INITIALIZING_CORE_SYSTEMS...</p>
+                    <p class="glitch-line line2">[WARNING]: MEMORY_LEAK AT 0x00FF41</p>
+                    <p class="glitch-line line3">&gt; OVERRIDING SECURITY PROTOCOLS...</p>
+                    <p class="glitch-line line4">&gt; ACCESS GRANTED // WELCOME USER</p>
+                </div>
+            </div>
+
+            <!-- Attached LED Status Strip (Right Edge) -->
+            <div class="attached-led-strip">
+                <div class="led-node" title="System Online">
+                    <div class="led-light online-blink"></div>
+                    <span class="led-tag">ONL</span>
+                </div>
+
+                <div class="led-node" title="System Stable">
+                    <div class="led-light stable-pulse"></div>
+                    <span class="led-tag">STB</span>
+                </div>
+
+                <div class="led-node" title="Core Active">
+                    <div class="led-light core-active"></div>
+                    <span class="led-tag">ACT</span>
+                </div>
+
+                <div class="led-node" title="Meltdown Disabled">
+                    <div class="led-light meltdown-off"></div>
+                    <span class="led-tag">OFF</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= NAVIGATION BAR BELOW PROFILE ================= -->
+<nav class="navbar"> 
+    
+    <!-- About Card: Detective Manila File Style -->
+    <div class="nav-card nav-card-detective">
+        <div class="card-badge">CASE FILE</div>
+        <img src="img/about-icon.jpeg" alt="About">
+        <h3>About Me</h3>
+        <p>Investigate personal profile, background, and detective case records.</p>
+        <a href="02-about.html">Inspect File</a>
+    </div>
+
+    <!-- Artist Card: Spotify Dark Mode Style -->
+    <div class="nav-card nav-card-spotify">
+        <div class="card-badge">SPOOFIFY</div>
+        <img src="img/song-icon.png" alt="artist">
+        <h3>Favorite Songs</h3>
+        <p>Stream favorite music tracks, top results, and artist collection.</p>
+        <a href="03-songs.html">Open Player</a>
+    </div>
+
+    <!-- Hobbies Card: Tech Terminal Style -->
+    <div class="nav-card nav-card-terminal">
+        <div class="card-badge">TERMINAL</div>
+        <img src="img/hobby-icon.jpeg" alt="Hobbies">
+        <h3>Hobbies</h3>
+        <p>Initialize terminal logs and inspect interactive diagonal slices.</p>
+        <a href="04-hobby.html">Run Script</a>
+    </div>
+
+    <div class="nav-card nav-card-terminal">
+        <div class="card-badge">TERMINAL</div>
+        <img src="img/hobby-icon.jpeg" alt="Hobbies">
+        <h3>Info</h3>
+        <p>Initialize terminal logs and inspect interactive diagonal slices.</p>
+        <a href="06-info.html">Run Script</a>
+    </div>
+
+</nav>
+
+<main class="main-content">
+    <div class="carousel"> 
+        <ul class="carousel-slides">
+            <li class="carousel-item">SYS_STATUS: ONLINE</li>
+            <li class="carousel-item">SEC_CLEARANCE: LEVEL 1</li>
+            <li class="carousel-item">NAV_INDEX: READY</li>
+        </ul>
+    </div>
+</main>
+
+</body>
+</html>
